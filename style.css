@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #b182d2;
+    position: relative;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.contenido{
+    background-color: #fff;
+    height: 90%;
+    width: 100%;
+    margin: 60px 60px 60px 150px;
+    border: 6px solid #000;
+    border-radius: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+.contenido h2{
+    font-size: 5rem;
+}
+.contenido p{
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    line-height: 35px;
+}
+.menu{
+    background: linear-gradient(#4628a2, #e231d4);
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+.menu ul li{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.menu ul li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.menu ul li a:hover{
+    color: #898989;
+}
+.indicador{
+    width: 50px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 60%;
+    position: absolute;
+    top: -5px;
+    height: -5px;
+    z-index: -1;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+}
+
+/* cuando detecto que tiene la clase active realizo el desplazamiento del indicador */
+.menu ul li:nth-child(1).active ~ .indicador{
+    transform: translateY(calc(70px * 0));
+    -webkit-transform: translateY(calc(70px * 0));
+    -moz-transform: translateY(calc(70px * 0));
+    -ms-transform: translateY(calc(70px * 0));
+    -o-transform: translateY(calc(70px * 0));
+}
+.menu ul li:nth-child(2).active ~ .indicador{
+    transform: translateY(calc(70px * 1));
+    -webkit-transform: translateY(calc(70px * 1));
+    -moz-transform: translateY(calc(70px * 1));
+    -ms-transform: translateY(calc(70px * 1));
+    -o-transform: translateY(calc(70px * 1));
+}
+.menu ul li:nth-child(3).active ~ .indicador{
+    transform: translateY(calc(70px * 2));
+    -webkit-transform: translateY(calc(70px * 2));
+    -moz-transform: translateY(calc(70px * 2));
+    -ms-transform: translateY(calc(70px * 2));
+    -o-transform: translateY(calc(70px * 2));
+}
+.menu ul li:nth-child(4).active ~ .indicador{
+    transform: translateY(calc(70px * 3));
+    -webkit-transform: translateY(calc(70px * 3));
+    -moz-transform: translateY(calc(70px * 3));
+    -ms-transform: translateY(calc(70px * 3));
+    -o-transform: translateY(calc(70px * 3));
+}
+.menu ul li:nth-child(5).active ~ .indicador{
+    transform: translateY(calc(70px * 4));
+    -webkit-transform: translateY(calc(70px * 4));
+    -moz-transform: translateY(calc(70px * 4));
+    -ms-transform: translateY(calc(70px * 4));
+    -o-transform: translateY(calc(70px * 4));
+}
